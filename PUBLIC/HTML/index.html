@@ -18,28 +18,53 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
       <img src="../IMG/LogoTP.png" width="50" height="50" class="d-inline-block align-top" alt="">
+      <h6 class="m-auto" style="color: #111; font-weight: bold; letter-spacing: 3px;">LOTUS LABS</h6>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav m-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/home">HOME <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">DOWNLOAD</a>
+              <a class="nav-link" href="/download">DOWNLOAD</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">STORE</a>
+              <a class="nav-link" href="/store">STORE</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT US</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="aboutus" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ABOUT US
+              </a>
+              <div class="dropdown-menu" aria-labelledby="aboutus">
+                <a class="dropdown-item" href="/about"><i class="fas fa-question"></i> About Us</a>
+                <a class="dropdown-item" href="/team"><i class="fas fa-user-tie"></i> The Team</a>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT US</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="support" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SUPPORT
+              </a>
+              <div class="dropdown-menu" aria-labelledby="support">
+                <a class="dropdown-item" href="/contact"><i class="fas fa-paper-plane"></i> Contact Us</a>
+                <a class="dropdown-item" href="/manual"><i class="fas fa-book"></i> User Manual</a>
+                <a class="dropdown-item" href="/jobs"><i class="fas fa-id-badge"></i> Jobs</a>
+                <a class="dropdown-item" href="/faq"><i class="fas fa-comments"></i> FAQ</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="developers" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                DEVELOPERS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="developers">
+                <a class="dropdown-item" href="/devs"><i class="fas fa-laptop-code"></i> DEV Portal</a>
+                <a class="dropdown-item" href="/docs"><i class="fas fa-code"></i> Documentation</a>
+                <a class="dropdown-item" href="https://github.com/LOTUS-LABS-LLC"><i class="fab fa-github"></i> Github</a>
+              </div>
             </li>
           </ul>
-          <button type="button" class="btn btn-dark" style="letter-spacing: 2px;"><i class="fas fa-user"></i> LOGIN</button>
+          <a href="/login"><button type="button" class="btn btn-dark" style="letter-spacing: 2px;"><i class="fas fa-user"></i> LOGIN</button></a>
         </div>
       </nav>
     <div class="content">
@@ -48,7 +73,7 @@
             <img src="../IMG/Logo.png" width="400px">
             <h1 style="font-weight: bold; letter-spacing: 15px;">LOTUS</h1>
             <h6 style="letter-spacing: 5px;">THE DAW BY ARTISTS FOR ARTISTS</h6>
-            <button type="button" class="btn btn-dark" style="letter-spacing: 2px;"><i class="fas fa-download"></i> DOWNLOAD</button>
+            <a href="download"><button type="button" class="btn btn-dark" style="letter-spacing: 2px;"><i class="fas fa-download"></i> DOWNLOAD</button></a>
             <img src="../IMG/wave.png" style="min-width: 100vw; max-width: 100vw; margin-top: 50px;">
             <div class="body-content">
               <div class="container-fluid">
@@ -78,52 +103,136 @@
               </div>
             </div>
             <img src="../IMG/wave.png" style="min-width: 100vw; max-width: 100vw; margin-top: 0px; rotate: 180deg;">
+            <div class="container-fluid">
+              <h1 style="letter-spacing: 10px; font-weight: bold; margin-top: 50px;">DOWNLOAD</h1>
+              <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm cards pt-3 pb-3">
+                  <i class="fab fa-windows fa-5x"></i>
+                  <h1>WINDOWS</h1>
+                  <form>
+                    <div class="form-group ml-auto mr-auto" style="max-width: 60%;">
+                      <label for="windowsSelect">Select Version</label>
+                      <select class="form-control" id="windowsSelect" style="text-align: center;">
+                        <option>WIndows x32</option>
+                        <option>Windows x64</option>
+                      </select>
+                    </div>
+                      <button type="submit" class="btn btn-dark ml-2"><i class="fas fa-download"></i> DOWNLOAD</button>
+                  </form>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm cards pt-3 pb-3">
+                  <i class="fab fa-apple fa-5x"></i>
+                  <h1>MAC</h1>
+                  <form>
+                    <div class="form-group ml-auto mr-auto" style="max-width: 60%;">
+                      <label for="macSelect">Select Version</label>
+                      <select class="form-control" id="macSelect" style="text-align: center;">
+                        <option>DMG</option>
+                      </select>
+                    </div>
+                      <button type="submit" class="btn btn-dark ml-2"><i class="fas fa-download"></i> DOWNLOAD</button>
+                  </form>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm cards pt-3 pb-3">
+                  <i class="fab fa-linux fa-5x"></i>
+                  <h1>LINUX</h1>
+                  <form>
+                    <div class="form-group ml-auto mr-auto" style="max-width: 60%;">
+                      <label for="linuxSelect">Select Version</label>
+                      <select class="form-control" id="linuxSelect" style="text-align: center;">
+                        <option>Deb</option>
+                        <option>Tar.gz</option>
+                      </select>
+                    </div>
+                      <button type="submit" class="btn btn-dark ml-2"><i class="fas fa-download"></i> DOWNLOAD</button>
+                  </form>
+                </div>
+                <div class="col-sm-1"></div>
+              </div>
+            </div>
         </div>
+
+
 
         <div class="footer">
           <img src="../IMG/wave.png" style="min-width: 100vw; max-width: 100vw; margin-top: 50px;">
           <div class="container-fluid footer-cont">
             <div class="row">
               <div class="col-sm"></div>
-              <div class="col-sm-2">
+              <div class="col-sm-2 LLabs">
                 <img src="../IMG/LogoTP.png" width="200px">
                 <h1>LOTUS LABS</h1>
                 <p>&copy; 2020 Lotus Labs LLC</p>
+                <div class="row">
+                  <div class="col-sm-2">
+                    <a href="https://twitter.com/Lotus_Labs"><button type="button" class="btn btn-dark"><i class="fab fa-twitter"></i></button></a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="https://github.com/LOTUS-LABS-LLC"><button type="button" class="btn btn-dark"><i class="fab fa-github"></i></button></a>
+                  </div>
+                  <div class="col-sm-2">
+                    <button type="button" class="btn btn-dark" disabled><i class="fab fa-facebook"></i></button>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="https://www.instagram.com/lotus_labs/"><button type="button" class="btn btn-dark"><i class="fab fa-instagram"></i></button></a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="https://www.patreon.com/Lotus_Labs"><button type="button" class="btn btn-dark"><i class="fab fa-patreon"></i></button></a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="https://discord.gg/PNC5gmq"><button type="button" class="btn btn-dark"><i class="fab fa-discord"></i></button></a>
+                  </div>
+                </div>
               </div>
               <div class="col-sm"></div>
-              <div class="col-sm-2 m-auto">
+              <div class="col-sm-2">
                 <h3 style="letter-spacing: 10px;">SUPPORT</h3>
                 <hr>
                 <ul class="list-group">
                   <li class="list-group-item border-0">
-                    <a href="#">Download</a>
+                    <a href="/jobs">Jobs</a>
                   </li>
                   <li class="list-group-item border-0">
-                    <a href="#">FAQ</a>
+                    <a href="/faq">FAQ</a>
                   </li>
                   <li class="list-group-item border-0">
-                    <a href="#">Contact Us</a>
+                    <a href="/download">Download</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="/contact">Contact Us</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="/manual">User Manual</a>
                   </li>
                 </ul>
               </div>
               <div class="col-sm"></div>
-              <div class="col-sm-2 m-auto">
+              <div class="col-sm-2">
                 <h3 style="letter-spacing: 10px;">LOTUS LABS</h3>
                 <hr>
                 <ul class="list-group">
                   <li class="list-group-item border-0">
-                    <a href="#">About Us</a>
+                    <a href="/about">About Us</a>
                   </li>
                   <li class="list-group-item border-0">
-                    <a href="#">Careers</a>
+                    <a href="/team">The Team</a>
                   </li>
                   <li class="list-group-item border-0">
-                    <a href="#">The Team</a>
+                    <a href="/devs">Developers</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="/docs">Documentation</a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="/tos">Terms Of Service</a>
                   </li>
                 </ul>
               </div>
               <div class="col-sm"></div>
-              <div class="col-sm-2 m-auto">
+              <div class="col-sm-2">
                 <h3 style="letter-spacing: 10px;">NEWSLETTER</h3>
                 <hr>
                 <ul class="list-group">
@@ -132,7 +241,7 @@
                       <div class="form-group">
                         <input type="email" class="form-control" id="newsletter" aria-describedby="emailHelp" placeholder="Enter Your E-Mail Address" required>
                         <small id="emailHelp" class="form-text text-muted">This email will be confidential.</small>
-                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                        <button type="submit" class="btn btn-dark mt-3">Submit</button>
                       </div>
                     </form>
                   </li>
@@ -142,7 +251,6 @@
             </div>
           </div>
         </div>
-
     </div>
 
     <!-- Optional JavaScript -->
