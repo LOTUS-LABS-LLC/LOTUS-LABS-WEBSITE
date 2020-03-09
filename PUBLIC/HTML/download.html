@@ -67,13 +67,13 @@
           <a href="/login"><button type="button" class="btn btn-dark" style="letter-spacing: 2px;"><i class="fas fa-user"></i> LOGIN</button></a>
         </div>
       </nav>
-    <div>
+    <div class="content">
 
-        <div class="body container-fluid pb-5">
+        <div class="body container-fluid">
             <img src="../IMG/Logo.png" width="400px">
             <h1 style="font-weight: bold; letter-spacing: 15px;">LOTUS</h1>
             <h6 style="letter-spacing: 5px;">THE DAW BY ARTISTS FOR ARTISTS</h6>
-            <a href="/download"><button type="button" class="btn btn-dark" style="letter-spacing: 2px;"><i class="fas fa-download"></i> DOWNLOAD</button></a>
+            <a href="download"><button type="button" class="btn btn-dark" style="letter-spacing: 2px;"><i class="fas fa-download"></i> DOWNLOAD</button></a>
             <img src="../IMG/wave.png" style="min-width: 100vw; max-width: 100vw; margin-top: 50px;">
             <div class="body-content">
               <div class="container-fluid">
@@ -103,75 +103,55 @@
                   <div class="col-sm-1">
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-sm-1">
-                  </div>
-                  <div class="col-sm p-3 cards">
-                    <i class="fas fa-users fa-3x"></i>
-                    <h3>PERFORMANCE</h3>
-                    <p>asdasdad</p>
-                  </div>
-                  <div class="col-sm-1">
-                  </div>
-                  <div class="col-sm p-3 cards">
-                    <i class="fas fa-book-reader fa-3x"></i>
-                    <h3>MARKETPLACE</h3>
-                    <p>asdjajksd</p>
-                  </div>
-                  <div class="col-sm-1">
-                  </div>
-                  <div class="col-sm p-3 cards">
-                    <i class="fas fa-money-bill-wave fa-3x"></i>
-                    <h3>OPEN SOURCE</h3>
-                    <p>ajksdklajdka</p>
-                  </div>
-                  <div class="col-sm-1">
-                  </div>
-                </div>
               </div>
             </div>
             <img src="../IMG/wave2.png" style="min-width: 100vw; max-width: 100vw; margin-top: 0px;">
             <div class="container-fluid">
-              <h1 style="letter-spacing: 10px; font-weight: bold; margin-top: 50px;">PRICING</h1>
+              <h1 style="letter-spacing: 10px; font-weight: bold; margin-top: 50px;">DOWNLOAD</h1>
               <div class="row">
                 <div class="col-sm-1"></div>
                 <div class="col-sm cards pt-3 pb-3">
-                  <img src="../IMG/lotusfree.png" width="40%" style="margin: 50px;">
-                  <h1>FREE</h1>
-                  <p>This version is free and contains the Base DAW.</p>
-                  <ul class="list-group" style="text-align: left;">
-                    <li class="list-group-item border-0" style="background-color: transparent;"><i class="fas fa-check" style="color:lime;"></i> Export and save projects</li>
-                    <li class="list-group-item border-0" style="background-color: transparent;"><i class="fas fa-check" style="color:lime;"></i> Audio Recording</li>
-                    <li class="list-group-item border-0" style="background-color: transparent;"><i class="fas fa-check" style="color:lime;"></i> Base Native VST's</li>
-                    <li class="list-group-item border-0" style="background-color: transparent;"><i class="fas fa-check" style="color:transparent;"></i></li>
-                  </ul>
-                  <a href="/download"><button type="button" class="btn btn-dark" style="letter-spacing: 2px; width: 100%;"><i class="fas fa-download"></i> DOWNLOAD</button></a>
+                  <i class="fab fa-windows fa-5x"></i>
+                  <h1>WINDOWS</h1>
+                  <form>
+                    <div class="form-group ml-auto mr-auto" style="max-width: 60%;">
+                      <label for="windowsSelect">Select Version</label>
+                      <select class="form-control" id="windowsSelect" style="text-align: center;">
+                        <option>WIndows x32</option>
+                        <option>Windows x64</option>
+                      </select>
+                    </div>
+                      <button type="submit" class="btn btn-dark ml-2"><i class="fas fa-download"></i> DOWNLOAD</button>
+                  </form>
                 </div>
                 <div class="col-sm-1"></div>
                 <div class="col-sm cards pt-3 pb-3">
-                  <img src="../IMG/lotusunlocked.png" width="40%" style="margin: 50px;">
-                  <h1>$10</h1>
-                  <p>Previous tier packages plus:</p>
-                  <ul class="list-group" style="text-align: left;">
-                    <li class="list-group-item border-0" style="background-color: transparent;"><i class="fas fa-check" style="color:lime;"></i> Marketplace</li>
-                    <li class="list-group-item border-0" style="background-color: transparent;"><i class="fas fa-check" style="color:lime;"></i> Special Native VST's</li>
-                    <li class="list-group-item border-0" style="background-color: transparent;"><i class="fas fa-check" style="color:lime;"></i> Presets & Sample Packs</li>
-                    <li class="list-group-item border-0" style="background-color: transparent;"><i class="fas fa-check" style="color:lime;"></i> Create Personal Themes</li>
-                  </ul>
-                  <a href="/purchase"><button type="button" class="btn btn-dark" style="letter-spacing: 2px; width: 100%;"><i class="fas fa-download"></i> PURCHASE</button></a>
+                  <i class="fab fa-apple fa-5x"></i>
+                  <h1>MAC</h1>
+                  <form>
+                    <div class="form-group ml-auto mr-auto" style="max-width: 60%;">
+                      <label for="macSelect">Select Version</label>
+                      <select class="form-control" id="macSelect" style="text-align: center;">
+                        <option>DMG</option>
+                      </select>
+                    </div>
+                      <button type="submit" class="btn btn-dark ml-2"><i class="fas fa-download"></i> DOWNLOAD</button>
+                  </form>
                 </div>
                 <div class="col-sm-1"></div>
                 <div class="col-sm cards pt-3 pb-3">
-                  <img src="../IMG/lotusinfinite.png" width="40%" style="margin: 50px;">
-                  <h1>$20</h1>
-                  <p>Previous tier packages plus:</p>
-                  <ul class="list-group" style="text-align: left;">
-                    <li class="list-group-item border-0" style="background-color: transparent;"><i class="fas fa-check" style="color:lime;"></i> Live Collaboration with Friends</li>
-                    <li class="list-group-item border-0" style="background-color: transparent;"><i class="fas fa-check" style="color:lime;"></i> Friends List & Messaging</li>
-                    <li class="list-group-item border-0" style="background-color: transparent;"><i class="fas fa-check" style="color:lime;"></i> 3rd Party VST Support</li>
-                    <li class="list-group-item border-0" style="background-color: transparent;"><i class="fas fa-check" style="color:lime;"></i> Full Access to Development API and Scripting</li>
-                  </ul>
-                  <a href="/purchase"><button type="button" class="btn btn-dark" style="letter-spacing: 2px; width: 100%;"><i class="fas fa-download"></i> PURCHASE</button></a>
+                  <i class="fab fa-linux fa-5x"></i>
+                  <h1>LINUX</h1>
+                  <form>
+                    <div class="form-group ml-auto mr-auto" style="max-width: 60%;">
+                      <label for="linuxSelect">Select Version</label>
+                      <select class="form-control" id="linuxSelect" style="text-align: center;">
+                        <option>Deb</option>
+                        <option>Tar.gz</option>
+                      </select>
+                    </div>
+                      <button type="submit" class="btn btn-dark ml-2"><i class="fas fa-download"></i> DOWNLOAD</button>
+                  </form>
                 </div>
                 <div class="col-sm-1"></div>
               </div>
@@ -179,8 +159,9 @@
         </div>
 
 
-        <img src="../IMG/wave.png" style="min-width: 100vw; max-width: 100vw;">
-        <div class="">
+
+        <div class="footer">
+          <img src="../IMG/wave.png" style="min-width: 100vw; max-width: 100vw; margin-top: 50px;">
           <div class="container-fluid footer-cont">
             <div class="row">
               <div class="col-sm"></div>
